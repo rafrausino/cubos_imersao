@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+}
+
+/* estilos de base */
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 8px;
+  background-color: #975cb2;
+}
+
+.item {
+  background-color: #f7941f;
+  border-radius:  3vh;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}

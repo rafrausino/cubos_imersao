@@ -1,5 +1,4 @@
 * {
-  /* border: 2px solid blue; */
   margin: 0;
   padding: 0;
 }
@@ -13,18 +12,16 @@ header {
   padding: 32px 64px;
 }
 
-.dados {
-  display: inline-block;
-  margin-bottom: 20px;
+header > img {
+  width: 250px;
+  height: 250px;
 }
 
-.foto {
-  border: 4px solid #ffc700;
-  border-radius: 50%;
-  margin-bottom: -120px;
-  margin-right: 24px;
+main {
+  display: flex;
+  padding: 40px 70px;
 }
-  
+
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: normal;
@@ -43,6 +40,19 @@ h1 span {
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.foto {
+  border: 4px solid #ffc700;
+  border-radius: 50%;
+  margin-bottom: -120px;
+  margin-right: 24px;
+}
+
+.dados {
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .profissao {
@@ -53,12 +63,13 @@ p {
   color: rgba(0, 0, 0, 0.6);
 }
 
-main {
-  padding: 40px 70px;
+.periodo {
+  font-size: 16px;
 }
 
 .coluna-menor {
   margin-top: 48px;
+  width: 288px;
 }
 
 .coluna-menor img {
@@ -73,15 +84,20 @@ main {
 }
 
 .coluna-menor li {
+  display: flex;
   margin-top: 32px;
 }
 
 .experiencias .linha {
-  border-color: #4200FF;
+  border-color: #4200ff;
+}
+
+.formacao {
+  padding-top: 32px;
 }
 
 .formacao .linha {
-  border-color: #ffc700;
+  border-color: yellow;
 }
 
 .linha {
@@ -90,12 +106,67 @@ main {
   margin-top: 9px;
 }
 
-.formacao {
-  margin-top: 32px;
-}
-
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   padding: 0;
 }
 
+.coluna-maior {
+  margin-left: 24px;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coluna-maior h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+.habilidade {
+  background-color: #fff;
+  border-radius:16px;
+  padding: 24px;
+  margin: 12px;
+  width: 288px;
+}
+
+.habilidade h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+
+}
+
+.habilidade p{
+  font-size: 20px;
+}
+
+.progresso {
+  width: 100%;
+  display: flex;
+
+}
+
+.barra {
+  width: 20%;
+  margin-top: 8px;
+  height: 4px;
+  background-color: #4200ff;
+}
+
+.incompleto {
+  opacity: 0.2;
+}
+
+.habilidade li {
+  margin-top: 32px;
+}
+
+.habilidade li:first-child {
+  margin-top: 0px;
+}

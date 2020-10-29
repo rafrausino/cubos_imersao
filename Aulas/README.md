@@ -40,5 +40,6 @@
 
 ## Languages and Tools
 
-- HTML
-- CSS
+    - HTML
+    - CSS
+    - JavaScript
